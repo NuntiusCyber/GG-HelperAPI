@@ -1,0 +1,214 @@
+Hello !
+I'm Nuntius the maker of that API
+
+To use it just write or copy and paste this line on the first line of your script :
+
+pcall(load(gg.makeRequest("https://ggapi.000webhostapp.com/").content))
+
+Once that's done, congratulations you should be able to use the API !
+(You can run your script, after accepting internet you should see a text confirming it loaded)
+
+Now I will explain all that was made simple but :
+
+
+
+
+ranges(YourRanges)
+Select the range / region to look the values in, use it before searching to select the correct range
+
+
+search(value, type)
+It will search for the value you replace to as the type you choose
+like search("1", float)
+
+
+refine(value, type)
+It will refine after a search for the value you replace to as the type you choose
+like refine("1", float)
+
+
+results(Number)
+Get results from your search to edit them, replace Number by an actual number like results(100)
+
+
+edit(value, type)
+It will edit results for the value you replace to as the type you choose
+like edit("100", float)
+(Make sure to get results before trying to edit)
+
+
+clear()
+Clear results from search (always do after editing)
+
+
+toast("Your text")
+It will show your text as bottom notification
+
+
+Types :
+dword
+float
+byte
+qword 
+xor
+word
+
+
+Regions :
+A
+Ca
+Ch
+Xa
+Other
+
+
+alert("Your Text")
+It will display your text in an alert box
+
+message("Your Text")
+It will also display your text in an alert box
+
+
+showGG(Boolean)
+Replace boolean by true to show gg or false to hide gg
+
+
+prompt(Choices, Settings, Types)
+This will create a prompt menu, I don't suggest using it without knowing how tables work
+
+
+
+
+internet("link").content
+Unless you know what you're doing and want heavy securities on your script, don't use that, it does GET ot POST request to the wanted website or server like internet("https://example.com").content
+
+
+multiMenu(Choices, Enabled, top description)
+Show a menu with multiple hack selections like :
+
+multiMenu({
+"Hack 1",
+"Hack 2"
+},{
+[1] = true
+[2] = false
+},"This is a menu with 1 enabled and 2 disabled")
+
+
+menu
+same as above but single choice, easier to work with :
+
+menu({
+"Hack 1",
+"Hack 2"
+},0,"Single choice menu")
+
+
+
+randomize(Number1, Number2)
+Randomize a number between both numbers like :
+randomize(7, 999)
+Will generate a random number between 7 and 999
+
+
+
+
+save(results or table)
+Will add a table or results to your save menu on GG, you have to name your results first like :
+
+MyResults = results(100)
+
+save(MyResults)
+
+
+
+
+
+convertTo.text(Number)
+Will convert your number into a text
+
+convertTo.num(Text)
+Will convert your text into a number (make sure the text contains only numbers)
+
+convertTo.ascii(Text)
+Will convert your text to their ascii value
+
+convertTo.hex(Text)
+Will convert your text to their hex value
+
+
+
+api.search(range, value, refine, type, result, edit)
+
+Will automatically search, refine and edit using your settings like :
+
+api.search(Ca, "1;2", "1", float, 100, "1234")
+
+
+api.loop(YourFunction)
+
+I suggest using it on the end of your script at the very bottom, it will make sure the script always return to the function you gave
+
+
+
+
+Fonts :
+(Available fonts : Strong, Struck, BoldFraktur, Fraktur, Fancy, Big, BigItalic, Fee, NormalItalic, Italic, Romaji, TypeWriter, Money, Asian, Small, Square, SquareFilled, Round, RoundFilled, Reverse, Mirror)
+
+api.font("YourText", Font)
+Will change the font of your text like so :
+
+MyText = api.font("Hello World !", Romaji)
+message(MyText)
+
+
+api.exit(text1, font1, text2, font2, text3, font3, text4, font4, text5, font5, log?)
+
+Will exit the script after an alert menu, if you don't use one of the 5 or multiple, replace each text and font by : nil
+
+log? to true to show debug informations, else use false
+
+like :
+api.exit("Goodbye !", BoldFraktur, "Credits", SquareFilled, nil, nil, nil, nil, nil, nil, true)
+
+
+
+
+api.mini()
+Minimize GG and the menu until you open GG again
+
+
+
+api.switch(YourTable, Boolean)
+It will change from Enabled to Disabled (or the other way around), for example :
+
+
+isEnabled = {
+"[Disabled] ",
+"[Disabled] "
+} --Always create the table first by writing that line and the same number of Disabled as you have hacks, rename isEnabled by anything else
+
+::Essay::
+mainMenu = menu({
+"Hack 1",
+"Hack 2"
+})
+
+if mainMenu == 1 or mainMenu == 2 then
+
+if isEnabled[mainMenu] == "[Enabled] " then
+api.switch(isEnabled[mainMenu], false)
+
+else
+
+api.switch(isEnabled[mainMenu], true)
+end
+
+end
+
+
+
+
+
+A template will be available soon, if you have any question you can ask me.
+
