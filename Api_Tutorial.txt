@@ -1,6 +1,9 @@
 Hello !
 I'm Nuntius the maker of that API
 
+Video tutorial :
+https://youtu.be/_bM9IjLVixw
+
 To use it just write or copy and paste this line on the first line of your script :
 
 pcall(load(gg.makeRequest("https://ggapi.000webhostapp.com/").content))
@@ -61,6 +64,28 @@ Ch
 Xa
 Other
 
+All fonts :
+Strong
+Struck
+BoldFraktur
+Fraktur
+Fancy
+Big
+BigItalic
+NormalItalic
+Romaji
+TypeWriter
+Fee
+Money
+Asian
+Small
+Italic
+Square
+SquareFilled
+Round
+RoundFilled
+Reverse
+Mirror
 
 alert("Your Text")
 It will display your text in an alert box
