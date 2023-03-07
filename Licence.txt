@@ -1,0 +1,4 @@
+This repository / codes are owned by Nuntius and CyberKnights,
+you are allowed to download and modify the script but
+please credit us for using the API so more peoples
+can find it and make scripts, thank you.
