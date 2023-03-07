@@ -207,8 +207,4 @@ end
 end
 
 
-
-
-
-A template will be available soon, if you have any question you can ask me.
-
+Template script is Tutorial.lua
