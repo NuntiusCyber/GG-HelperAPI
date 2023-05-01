@@ -57,7 +57,7 @@ xor
 word
 
 
-Regions :
+Ranges :
 A
 Ca
 Ch
