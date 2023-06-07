@@ -1,25 +1,7 @@
 --[[
 
 Tutorial script made exclusively to show how to use the API on the channel https://youtube.com/@Cyber.Knights
-Made by Nuntius (Main leader)
-
-All we will see :
-api.exit("Goodbye !", BoldFraktur, "Credits", SquareFilled, nil, nil, nil, nil, nil, nil, true)
-api.mini()
-api.switch(YourTable, Boolean)
-api.font("YourText", Font)
-api.loop(YourFunction)
-api.search(Ca, "1;2", "1", float, 100, "1234")
-save(results or table)
-randomize(Number1, Number2)
-showGG(Boolean)
-message("Your Text")
-clear()
-edit(value, type)
-results(Number)
-refine(value, type)
-search(value, type)
-ranges(YourRanges)
+Made by LivaiTRGR (Main leader)
 
 ]]
 
